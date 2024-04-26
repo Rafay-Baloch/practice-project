@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title> Student Form  </title>
+    </head>
+    <style>
+        body{
+            margin: 0;
+            color: black;
+            background-image: url(form.jpg);
+            background-size: 100%;
+             background-repeat: no-repeat;
+        }
+  
+        div.container{
+            width: 40%;
+            height: 80%;
+            background-color: white;
+            /* box-shadow: 10px 10px 5px rgb(243, 222, 222); */
+           font-weight: bold;
+           box-sizing: border-box;
+           padding-top: 20px;
+           margin-left: 30%;
+           padding-left: 20px;
+      
+           font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        h1{
+            color:white;
+        }
+        button{
+            background-color: #04AA6D;
+  color: white;
+  padding: 12px ;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+        }
+        button:hover{
+            background-color: #45a049;
+        }
+        input{
+             
+   padding: 5px;
+  border: 1px solid #2e2626;
+   border-radius: 4px;
+  box-sizing: border-box;
+   margin-top: 6px; 
+  margin-bottom: 16px;  
+  /* resize: vertical;  */
+        }
+    </style>
+    <body > 
+    
+        <center> <h1>Registration Form</h1></center> 
+     <div class="container">
+        
+     <form name="std" action="login.php" method="post" target="_blank">
+         <label for="sname">Student Name</label><br>
+        <input type="text" name="sname" id="sname"><br>
+        <label for="fname">Father Name</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="cname">Cnic</label><br>
+        <input type="number" name="cname" id="Cnic" ><br>
+        <label for="Pname">Password</label><br>
+        <input type="password" name="Password" id="pass"><br>
+        <br> Gender:
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="feMale">FeMale</label>
+        <input type="radio" id="feMale" name="Gender" value="FeMale"><br>
+          <br>Country:
+            <label for="Pakistan">Pakistan</label>
+          <input type="checkbox" name="Country" id="pak" value="Pakistan">
+             <label for="Pakistan">India</label>
+        <input type="checkbox" name="Country" id="ind" value="India">
+    <label for="Pakistan">Saudi Arabia</label>
+    <input type="checkbox" name="Country" id="Saudi" value="Saudi Arabia"><br><br>
+
+      <button>Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+
+     </form>
+    </div>
+   
+    </body>
+</html>
