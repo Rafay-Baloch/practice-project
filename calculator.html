@@ -10,11 +10,32 @@
 </head>
 <body>
     <div class="d-flex justify-content-center align-item-center mt-5">
-        <button type="button" class="btn btn-warning btn-lg" onclick="sayhello()"> Claim Discount</button>
+        <button type="button" class="btn btn-success btn-lg" onclick="calculateFees(300)"> Calculate fiver project price</button>
        </div>
-    
-       <script>function sayhello(){
-        alert('You have recived discount')
-       }</script>
+    <!-- calculateFees of fiver -->
+       <script>function calculateFees(orderPrice)
+       {
+      const fiverFees=(orderPrice * 20)/100;
+       const  originalPrice=orderPrice-fiverFees;
+       console.log( 'original price is:',originalPrice)
+       }
+       </script>
+        <div class="d-flex justify-content-center align-item-center mt-5">
+            <div>
+          <h1 class="h1 test-primary" id="showFees"></h1>
+        </div>
+           </div>
+           
+        <!-- Fiver cuts 20% from each freelancer -->
+           <script>function calculateFees(orderPrice)
+           
+           {
+            var uservalue=prompt("enter fiver value");
+            // console.log("uservalue...",uservalue)
+          const fiverFees=(uservalue * 20)/100;
+           const  originalPrice=orderPrice-fiverFees;
+         document.getElementById('showFees').innerHTML="The total price after fiver fees is:"+originalPrice;
+           }
+           </script>
 </body>
 </html>
