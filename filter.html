@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Each Loop</title>
+    <title>Document</title>
 </head>
 <body>
-    <button onclick="runForloop()">Show some user data</button>
     <script>
-          const users=[
+//         Example 1
+//     let studentAges=[5,10,14,15,18,25,30,35,40];
+//    let filterAges= studentAges.filter[function(item){
+//         if(item>18){
+//             return true
+//         }
+//         else{
+//             return false
+//         }
+//     }];
+// console.log("Student go to tour", filterAges);
+// or
+//     let studentAges=[5,10,14,15,18,25,30,35,40];
+// let filterAges=studentAges.filter((item)=>item>18);
+//     console.log("Student go to tour", filterAges);
+const users=[
             {
                 name:"Abdur",
                 userType:"super Admin",
@@ -32,27 +46,22 @@
             },
             {
                 name:"Abdur",
-                userType:"super Admin",
+                userType:"Editor",
                 email:"Abdurrafay248@gmail.com",
                 username:"Rafay_hassan",
                 phone:"03344041602",
             },
             {
                 name:"Abdur",
-                userType:"super Admin",
+                userType:"Publisher",
                 email:"Abdurrafay248@gmail.com",
                 username:"Rafay_hassan",
                 phone:"03344041602",
             },
         ];
-        var allUserNames=[];
-        // console.log("all user name...",)
-        function runForloop(){
-            users.forEach((singleitem)=>{
-                allUserNames.push(singleitem.phone);
-            });
-            console.log("ALL user name",allUserNames);
-        }
-    </script>
+      const allSuperAdminUsers=  users.filter((item)=>item.userType ==="super Admin");
+      console.log("all super admin users.....",allSuperAdminUsers);
+      
+</script>
 </body>
 </html>
