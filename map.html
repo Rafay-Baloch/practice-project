@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        //  store in array through method map 
+        const users=[
+            {
+                name:"Abdur",
+                userType:"super Admin",
+                email:"Abdurrafay248@gmail.com",
+                username:"Rafay_hassan",
+                phone:"03344041602",
+            },
+            {
+                name:"Abdur",
+                userType:"super Admin",
+                email:"Abdurrafay248@gmail.com",
+                username:"Rafay_hassan",
+                phone:"03344041602",
+            },
+            {
+                name:"Abdur",
+                userType:"super Admin",
+                email:"Abdurrafay248@gmail.com",
+                username:"Rafay_hassan",
+                phone:"03344041602",
+            },
+            {
+                name:"Abdur",
+                userType:"super Admin",
+                email:"Abdurrafay248@gmail.com",
+                username:"Rafay_hassan",
+                phone:"03344041602",
+            },
+            {
+                name:"Abdur",
+                userType:"super Admin",
+                email:"Abdurrafay248@gmail.com",
+                username:"Rafay_hassan",
+                phone:"03344041602",
+            },
+        ];
+        const allUsers=users?.map((singleUser) => singleUser.email);
+        // console.log("All users...", allUsers);
+        document.getElementById("demo").innerHTML=allUsers(0);
+    </script>
+</body>
+</html>

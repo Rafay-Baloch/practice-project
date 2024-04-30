@@ -11,14 +11,21 @@
     <div class="d-flex justify-content-center  mt-5">
         <div><button class="btn btn-danger" onclick="calculateArea(25,45)">Calculate area in square feet</button></div>
         <div>
+            <!-- see in html code -->
         <h1 class="h1" id="showAreahere"></h1>
         </div>
     </div>
     <script>
-        function calculateArea(widthfeet,lengthinfeet){
-           const area=widthfeet*lengthinfeet;
+        // function calculateArea(widthfeet,lengthinfeet)
+        function calculateArea()
+        {
+        var userwidth=prompt("Enter width for property");
+        var userlength=prompt("Enter length for property");
+        const area=userwidth*userlength;
+        //    const area=widthfeet*lengthinfeet;
+        //  4 way to see code in java below code to see in console
         //    console.log(area)
-        document.getElementById('showAreahere').innerHTML=area;
+        document.getElementById('showAreahere').innerHTML="The area of square is:"+area;
         }
     </script>
 </body>
