@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <script>
+        let carsArray=[
+            {name:"prius",model:"2011",color:"white"},
+            {name:"prius",model:"2011",color:"white"},
+            {name:"prius",model:"2011",color:"white"},
+            {name:"prius",model:"2011",color:"white"},
+            {name:"prius",model:"2011",color:"red"},
+            {name:"prius",model:"2011",color:"red"},
+            {name:"prius",model:"2011",color:"white"},
+        ];
+        let newCar={
+            name:"lamborgirni",
+            model:"2024",
+            color:"black"
+        };
+        //1. carsArray?.splice(2,0,newCar);index no 2 show car
+        //2. carsArray.push(newCar);all cars with new car
+        //3. carsArray.unshift(newCar);new car show in first Number
+    //  4.  let resultCars= carsArray?.find((item)=>item.color ==="red");
+        // console.log("All cars.....",resultCars);
+
+        let filteredCars= carsArray?.filter((item)=>item.color ==="white");
+        console.log("All cars.....",filteredCars);
+    </script>
+</body>
+</html>
