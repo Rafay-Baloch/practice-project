@@ -6,6 +6,9 @@
     <title>Array Method</title>
 </head>
 <body>
+    <h1 id="demo1"></h1>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
     <script>
         let carsArray=[
             {name:"prius",model:"2011",color:"white"},
@@ -16,19 +19,62 @@
             {name:"prius",model:"2011",color:"red"},
             {name:"prius",model:"2011",color:"white"},
         ];
+        
+         const frameworks=["5","3","2","1","7"];
         let newCar={
             name:"lamborgirni",
             model:"2024",
             color:"black"
         };
+
+        // const frameworks=["5","3","2","1","7"];
         //1. carsArray?.splice(2,0,newCar);index no 2 show car
         //2. carsArray.push(newCar);all cars with new car
         //3. carsArray.unshift(newCar);new car show in first Number
+        //  This is related all above programconsole.log("All Cars.....",carsArray)
     //  4.  let resultCars= carsArray?.find((item)=>item.color ==="red");
         // console.log("All cars.....",resultCars);
 
-        let filteredCars= carsArray?.filter((item)=>item.color ==="white");
-        console.log("All cars.....",filteredCars);
+        // 5.let filteredCars= carsArray?.filter((item)=>item.color ==="white");
+        // console.log("All cars.....",filteredCars);
+
+        // 6.const sortedFrameWorks=frameworks?.sort();
+        // console.log("sorted Frameworks.....",sortedFrameWorks);
+        //7. const result=frameworks?.sort(function(a,b){
+        //     return a-b;
+        // });
+        // const result=frameworks?.sort((a,b) =>a-b);
+        // console.log("sorted Frameworks.....",result);
+    //   8.  const sortedCars=carsArray?.sort((a,b) =>
+    // a.name.localCompare(b.name));
+    //    console.log("sorted Frameworks.....",sortedCars);
+    let shoppingItem=[
+            {name:"prius",price:20000,color:"white"},
+            {name:"prius",price:25000,color:"white"},
+            {name:"prius",price:30000,color:"white"},
+            {name:"prius",price:40000,color:"white"},
+            {name:"prius",price:50000,color:"red"},
+            {name:"prius",price:60000,color:"red"},
+            {name:"prius",price:70000,color:"white"},
+        ];
+   const totalCost=shoppingItem?.reduce((acc,item)=> acc +item.price,0);
+        console.log(totalCost);
+    </script>
+    <p id="demo1"></p>
+
+    <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let size = fruits.length;
+    document.getElementById("demo1").innerHTML = size;
+    </script>
+   
+    
+    <script>
+    const sweet = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo2").innerHTML = sweet;
+    
+    sweet.sort();
+    document.getElementById("demo3").innerHTML = sweet;
     </script>
 </body>
 </html>
